@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OnClick</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+                function putWelcome(){
+                    var myname = prompt("Hey! What is your name?");
+                    window.confirm("Is Your name really " +myname+ "?");
+                    return myname;
+                }
+        </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-list">
+         <h3><a href="OnClick.html"> OnClick </a><a href="OnBlur.html">OnBlur</a><a href="OnFocus.html">OnFocus</a><a href="OnMouseOver.html">OnMouseOver</a></h3>
+      </div>
+    </div>
+  <div class="main">
+     <h1> Welcome to JavaScript Programming!! <h1>
+     <input type = "button" value = "Click ME" onclick="var thename = putWelcome(); 
+        document.writeln('<h1> Hello '+thename + '</h1>');">
+    </div>
+    <div class="footer">
+        <p>The onclick JavaScript event occurs when the user clicks on an element. It runs a specified line of code when you click a HTML object that has the onclick attribute. The JavaScript onclick functions can be triggered by object. onclick or object.</p>
+      </div> 
+  </body>
+</html>
