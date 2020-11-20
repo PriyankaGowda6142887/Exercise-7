@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OnFocus</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+                function myFunction(x) {
+             document.getElementById(x).style.background =  "#26d0c9";
+             
+            }
+        </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-list">
+         <h3><a href="OnClick.html"> OnClick </a><a href="OnBlur.html">OnBlur</a><a href="OnFocus.html">OnFocus</a><a href="OnMouseOver.html">OnMouseOver</a></h3>
+      </div>
+    </div>
+    <div class="main">
+        <h1> Welcome to JavaScript Programming!! <h1>
+        FirstName: <input type = "text"  id = "fname" onfocus="myFunction(this.id);">
+           <br>
+           LastName:  <input type = "text"  id = "lname" onfocus="myFunction(this.id);">
+       </div>
+    <div class="footer">
+        <p>A function is triggered when one of the input fields is selected,The function changes the background-color of the input field.</p>
+      </div> 
+  </body>
+</html>

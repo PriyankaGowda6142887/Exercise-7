@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OnBlur</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+                function myFunction() {
+            var name = document.getElementById("fname");
+            
+            name.value = name.value.toUpperCase();
+        }
+        </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-list">
+         <h3><a href="OnClick.html"> OnClick </a><a href="OnBlur.html">OnBlur</a><a href="OnFocus.html">OnFocus</a><a href="OnMouseOver.html">OnMouseOver</a></h3>
+      </div>
+    </div>
+    <div class="main">
+        <h1> Welcome to JavaScript Programming!! <h1>
+         Enter Your Name: <input type = "text" id = "fname"  onblur="myFunction();">
+       </div>
+    <div class="footer">
+        <p>When you give data in the input field, a function is triggered which transforms the input text to upper case as soon as you click outside the textarea.</p>
+      </div> 
+  </body>
+</html>
